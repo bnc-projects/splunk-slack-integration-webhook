@@ -21,6 +21,12 @@ const colorFromPayload = function (payload) {
     return "#b82004";
   }
   if (payload._raw) {
+    if (payload._raw.includes("WARN")) {
+      return "#b8660a";
+    }
+    if (payload._raw.includes("ERROR")) {
+      return "#b82004";
+    }
     return "#3fb836";
   }
   if (payload.errorMessage) {
