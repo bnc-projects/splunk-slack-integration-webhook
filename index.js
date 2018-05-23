@@ -49,7 +49,7 @@ const fieldsFromPayload = function (payload) {
 };
 
 exports.handler = (event, context, callback) => {
-  console.info('Event received [json=\"%s\"]', JSON.stringify(event));
+    console.info('Event received [json=\"%s\"]\n', JSON.stringify(event));
 
   const jsonBody = JSON.parse(event.body);
 
@@ -85,7 +85,7 @@ exports.handler = (event, context, callback) => {
   };
 
   const post_request = https.request(post_options, function (res) {
-    console.log('Response received [status=%s]', res.statusCode);
+    console.log('Response received [status=%s,]', res.statusCode);
     let body = '';
 
     res.on('data', function (chunk) {

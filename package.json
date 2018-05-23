@@ -1,0 +1,20 @@
+{
+  "name": "splunk-slack-integration-webhook",
+  "version": "1.0.0",
+  "description": "Lambda function to forward Splunk messages to Slack.",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bnc-projects/splunk-slack-integration-webhook"
+  },
+  "scripts": {
+    "test": "mocha",
+    "test-with-watch": "mocha --watch"
+  },
+  "devDependencies": {
+    "chai": "~4.1.2",
+    "mocha": "~5.2.0",
+    "nock": "~9.2.6"
+  }
+}
